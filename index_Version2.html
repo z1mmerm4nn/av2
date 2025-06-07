@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agrinho 2025</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <span class="logo">Agrinho 2025</span>
+      <button class="close-btn" id="closeSidebar">&times;</button>
+    </div>
+    <nav>
+      <a href="#sobre" onclick="closeSidebar()">Sobre</a>
+      <a href="#galeria" onclick="closeSidebar()">Galeria</a>
+      <a href="#videos" onclick="closeSidebar()">Vídeos</a>
+      <a href="#contato" onclick="closeSidebar()">Contato</a>
+    </nav>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+  <header>
+    <button class="menu-btn" id="openSidebar">&#9776;</button>
+    <nav class="topnav">
+      <span class="logo">Agrinho 2025</span>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#videos">Vídeos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero animate-fade-in">
+      <div class="hero-content">
+        <h1>Bem-vindo ao Agrinho 2025</h1>
+        <p>Educação, tecnologia e sustentabilidade no campo, para o futuro do Brasil.</p>
+        <a href="#sobre" class="btn">Saiba Mais</a>
+      </div>
+      <img class="hero-img" src="img/agrinho-hero.jpg" alt="Imagem destaque Agrinho">
+    </section>
+    <section id="sobre" class="sobre animate-slide-up">
+      <h2>Sobre o Agrinho</h2>
+      <p>O programa Agrinho incentiva crianças e jovens a aprenderem sobre o campo, sustentabilidade, tecnologia e cidadania. Em 2025, trazemos novidades e experiências ainda mais envolventes!</p>
+    </section>
+    <section id="galeria" class="galeria animate-slide-up">
+      <h2>Galeria de Imagens</h2>
+      <div class="galeria-grid">
+        <img src="img/galeria1.jpg" alt="Foto 1"/>
+        <img src="img/galeria2.jpg" alt="Foto 2"/>
+        <img src="img/galeria3.jpg" alt="Foto 3"/>
+      </div>
+    </section>
+    <section id="videos" class="videos animate-slide-up">
+      <h2>Vídeos</h2>
+      <div class="videos-grid">
+        <div class="video-responsive">
+          <iframe src="https://www.youtube.com/embed/nODrjQy2a8E" title="Exemplo Vídeo Agrinho" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-responsive">
+          <video controls poster="img/video-thumb.jpg">
+            <source src="videos/sample.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos HTML5.
+          </video>
+        </div>
+      </div>
+    </section>
+    <section id="contato" class="contato animate-slide-up">
+      <h2>Entre em Contato</h2>
+      <form>
+        <input type="text" placeholder="Seu nome" required />
+        <input type="email" placeholder="Seu email" required />
+        <textarea placeholder="Sua mensagem" required></textarea>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Agrinho. Todos os direitos reservados.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
